@@ -35,8 +35,22 @@ function combSort(arr) {
 
 // Testing the algorithm
 const unsortedArray = [7, 4, 8, -58, -22, 12, 0, -96, 9, 5];
-console.log("Unsorted Array:", unsortedArray);
-const sortedArray = combSort(unsortedArray.slice()); // Slice is used to make a copy of the array
-console.log("Sorted Array:", sortedArray);
+// console.log("Unsorted Array:", unsortedArray);
+// const sortedArray = combSort(unsortedArray.slice()); // Slice is used to make a copy of the array
+// console.log("Sorted Array:", sortedArray);
 
 // Daniel Vélez.
+
+// Today's exercise
+function newSort(arrayN) {
+
+  let newArray = [];
+
+  for (let i = 0; i < arrayN.length; i++) {
+    let multipliedElement = arrayN[i] * 2;
+    newArray.push(multipliedElement);
+  }
+  return newArray;
+}
+
+console.log(newSort(unsortedArray));
